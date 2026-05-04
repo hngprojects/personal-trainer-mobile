@@ -9,8 +9,7 @@ Future<void> main() async {
 
   await loadAppEnv();
   setupLocator();
-  
-  await Future.delayed(const Duration(seconds: 3));
+
   FlutterNativeSplash.remove();
 
   runApp(const ProviderScope(child: App()));
